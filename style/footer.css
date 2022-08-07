@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* max-width: 1200px; */
+  background-color: #1a2e35;
+  padding: 2rem 0px 1rem 0px;
+  margin-bottom: 0px;
+}
+
+.footer-lista {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+
+.footer-direitos {
+  display: block;
+  /* border: 1px solid red; */
+  color: #c7c7c7;
+  font-size: 0.75rem;
+  text-align: right;
+  margin: 1rem 1rem 0rem 0rem;
+}
+
+.footer a {
+  color: #c7c7c7;
+}
