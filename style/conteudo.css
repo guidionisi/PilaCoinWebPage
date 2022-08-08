@@ -62,6 +62,8 @@
 .intro-imagem {
   position: relative;
   align-self: center;
+  justify-self: center;
+  object-fit: cover;
 }
 .intro-legenda {
   position: absolute;
@@ -70,4 +72,55 @@
   text-align: center;
   bottom: 0px;
   right: 40px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 1035px) {
+  .intro-titulo {
+    font-size: 2.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .intro-main p {
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+  .intro-botao {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro-container {
+    margin: 25px auto;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+  }
+  .intro-main {
+    padding-bottom: 30px;
+  }
+  .intro-titulo {
+    font-size: 2rem;
+  }
+  .intro-main p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .intro-botao {
+    margin-top: 50px;
+    font-size: 1.125rem;
+    padding: 5px 15px;
+  }
+  .intro-legenda {
+    font-size: 0.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .intro-container {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-imagem {
+    grid-row: 1;
+    max-width: 250px;
+  }
 }

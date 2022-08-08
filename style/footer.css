@@ -15,16 +15,46 @@
   justify-content: center;
   /* border: 1px solid red; */
 }
+.footer-lista li {
+  /* border: 1px solid red; */
+}
 
 .footer-direitos {
   display: block;
   /* border: 1px solid red; */
   color: #c7c7c7;
   font-size: 0.75rem;
-  text-align: right;
+  text-align: center;
   margin: 1rem 1rem 0rem 0rem;
 }
 
 .footer a {
   color: #c7c7c7;
+}
+
+/* RESPONSIVO */
+@media (max-width: 800px) {
+  .footer {
+    padding: 1rem 0rem 1rem 0rem;
+  }
+  .footer-lista {
+    font-size: 0.875rem;
+    gap: 2rem;
+  }
+  .footer-direitos {
+    font-size: 0.6rem;
+    margin: 2.5rem 1rem 0rem 0rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-lista {
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 20px;
+  }
+  .footer-direitos {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
 }

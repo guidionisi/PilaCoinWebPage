@@ -22,8 +22,39 @@
 .header-botao {
   /* max-width: auto; */
   padding: 10px 30px;
+  margin-right: 30px;
+  text-transform: uppercase;
   /* border: 1px solid green; */
   background-color: #a9f0cb;
   border-radius: 4px;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+  .header-logo {
+    font-size: 3.5rem;
+  }
+  .header-botao {
+    padding: 5px 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-logo {
+    font-size: 3rem;
+  }
+  .header-botao {
+    padding: 5px 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-logo {
+    font-size: 2rem;
+  }
+  .header-botao {
+    padding: 2px 5px;
+  }
 }
